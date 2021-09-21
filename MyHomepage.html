@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 </title>
+    <link  rel="stylesheet" type="text/css" href="style1.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="heading">
+            <h1>Welcome to My Homepage</h1>
+            <p>Use the menu to select different Stylesheets</p>
+        </header>
+        <div class="content">
+            <nav class="navbar">
+                <ul id="stylelist">
+                    <li class="styleitem" onclick="applyStyle(1)">Stylesheet 1 </li>
+                    <li class="styleitem" onclick="applyStyle(2)">Stylesheet 2</li>
+                    <li class="styleitem" onclick="applyStyle(3)">Stylesheet 3</li>
+                    <li class="styleitem" onclick="applyStyle(4)">Stylesheet 4</li>
+                    <li class="styleitem" onclick="applyStyle(5)">No Stylesheet</li>
+                </ul>
+            </nav>
+            <main class="main">
+                <h1>Same Page Different Stylesheets</h1>
+                <p>
+                    This is a demonstration of how different stylesheets can change the layout of your HTML page. You
+                    can
+                    change the layout of this page by selecting different stylesheets in the menu, or by selecting one
+                    of
+                    the following links:<br>
+                    <a href="#" onclick="applyStyle(1)">Stylesheet1</a>,
+                    <a href="#" onclick="applyStyle(2)">Stylesheet2</a>,
+                    <a href="#" onclick="applyStyle(3)">Stylesheet3</a>,
+                    <a href="#" onclick="applyStyle(4)">Stylesheet4</a>.
+                </p>
+                <h2>No Styles</h2>
+                <p>
+                    This page uses DIV elements to group different sections of the HTML page. Click here to see how the
+                    page
+                    looks like with no stylesheet:<br>
+                    <a href="#" onclick="applyStyle(5)">No Stylesheet</a>.
+                </p>
+            </main>
+            <div class="sidebar">
+                <h3>Side-Bar</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="MyHomepage.js" ></script>
+</body>
+
+</html>
